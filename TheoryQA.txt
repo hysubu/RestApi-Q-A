@@ -1,0 +1,162 @@
+#Q1. What is API 
+
+Ans => Api stand for  application  programming interface 
+=> They are  basically collection  of function  & procedur 
+=> They allow us to communicate to application with each other 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#Q2. What Is Rest ? 
+
+Ans =>  Rest stand for Representational state transfer 
+=> Its a design or style to Api 
+=> Its a Guideline and designing  a Network Application 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#Q3. What Is Rest Api ? 
+
+Ans=> Its a design or architech the api and also styling 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#Q4. What is URI ? 
+
+Ans => URI stand for Uniform Resource Identyfier 
+=> Resource mean whenever we send any data like images file audio in any format(Json, Xml)    to server through api these type of data is called URI 
+
+Example :- https:// www.examples.com/path/to/resource 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#Q5. Is API considered a software ? 
+
+Ans => Api not a software its a one type of protocal or link 
+=> Its a developed a part of software system or sources .
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+#Q6. Which Protocal do Rest APIs Use ? 
+
+Ans=> HTTP Protocal use The Api
+=> HTTP stands For Hypertext transfer Protocol
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#Q7. Which HTTP Request Methods are Supported  By Rest ? 
+
+Ans =>  The Four Primarly Method Support In Rest .
+	1. GET(its a Readonly method like if we want to view any data those time we use GET Method) 
+	2. POST(Its a Create A data or Create A Resource On the Server when we wnat to create a dtaa those time we 	use POST Method )
+	3. PUT(its A update a data in Server If we want to Update any data in server those time we use PUT 	Method.
+	4. DELETE( Its a Delete the data On server)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
+#Q7. What are CRUD Operation ? 
+
+Ans =>  CRUD Stand For Create retrive update And Delete 
+=> These are four http basic actions that can be performed database throgh RestApi
+like 
+=> Create(we are using Post method )
+=> Retrive(we are useing GET method)
+=> Update (we are using Put method )
+=> Delete (We are using Delete Method)
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#Q8. What is the  difference between PUT,POST,And PATCH ? 
+
+=> PUT:- Put mean whenever the clint sending some data to server if the data is alredady exists in database then Put will be update it 
+if The data is not exists a database then Put will be create it 
+
+=> POST :- When the clint want create a data in server that time the POST will create the new resource in database 
+
+=> PATCH :-its work in partial update like when we have 5 data if we want update only one data that time we use PATCH method because its update onl those data which data we want to update not full data .
+ 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#Q9. What are some benefit of Rest ? 
+
+Ans => Rest is lightweight and faster than to  another API
+=> Rest is uses a simple web technology like XML(xtensible makup language ) and JSON(javascript object Notetion)
+=>Rest is easy to test in browser 
+=> The Api Tesing toools are POSTMAN 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+#Q10.What are the Principle of Rest ? 
+
+Ans => Its a Stateless  Communication  because its cant store past Request and response of api 
+	=> benifit is the memory is free and working is fast and also lightweight 
+	=> reduce the Server load any time 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+   
+#Q11. What is Messaging in the Context Of Rest ? 
+
+Ans => The Messageing reffers to the  communcation between clint and server 
+=> Like when the clint sending some data or receiving some data in Through api these type of dtaa is called Mesaging 
+=> The message is JSON format always communicate.
+
+Examples: - 
+
+
+import requests
+
+# GET request to retrieve tasks
+response = requests.get('https://api.example.com/tasks')
+
+if response.status_code == 200:
+    tasks = response.json()
+    for task in tasks:
+        print(task['title'])
+else:
+    print('Error:', response.status_code)
+
+# POST request to create a new task
+new_task = {
+    'title': 'Finish report',
+    'due_date': '2023-07-31'
+}
+
+response = requests.post('https://api.example.com/tasks', json=new_task)
+
+if response.status_code == 201:
+    created_task = response.json()
+    print('New task created:', created_task['id'])
+else:
+    print('Error:', response.status_code)
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+#Q12. Difference between Api  and web services ? 
+
+
+Ans => All Services is Api but all Api is not web services 
+=> The Web services is always need Network or internet but Api is not need to Network or internet 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+#Q13. What is Resource ? 
+
+Ans=> 17:04 28-06-2023
+ 
+
+
+
+
+
+ 
